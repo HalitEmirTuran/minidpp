@@ -68,4 +68,11 @@ public class CsvImportServiceTests : IDisposable
         Assert.Equal(2, model.Lots.Count);
     }
 
+    [Fact]
+    public async Task Eksik_sutunlu_CSV_hatali()
+    {
+        var csv = "gtin,model_adi\n08690000000012,Slim Denim 501\n";
+        await Assert.ThrowsAsync<InvalidDataException>(()=> _importer.ImportAsync(MetindenCsv(csv)));
+    }
+
 }
