@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MiniDpp.api/MiniDpp.api.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MiniDpp.tests/MiniDpp.tests.csproj" />
+  </Folder>
+</Solution>
