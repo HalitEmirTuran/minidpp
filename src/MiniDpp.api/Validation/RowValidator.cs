@@ -60,7 +60,7 @@ public static class RowValidator
         return number;
     }
 
-    private static bool TryParseDecimal(string? value, out decimal number) =>
+    public static bool TryParseDecimal(string? value, out decimal number) =>
     decimal.TryParse(
         value?.Trim(),
         NumberStyles.AllowLeadingSign | NumberStyles.AllowDecimalPoint,
