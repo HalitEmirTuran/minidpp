@@ -22,4 +22,8 @@
     <ProjectReference Include="..\..\src\MiniDpp.api\MiniDpp.api.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="..\..\datalar\urunler_duzeltilmis_test.csv" Link="urunler_duzeltilmis_test.csv" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
 </Project>
